@@ -10,9 +10,11 @@ namespace TestCloudPoint
 {
     public class Auto
     {//
+        public myPoint MyPoint;
         public Rectangle Figure;
-        public Auto(int myWidth, int myHeight)
+        public Auto(int myWidth, int myHeight, myPoint MyPoint) 
         {
+            this.MyPoint = MyPoint;
             Figure = new Rectangle() { Width = myWidth, Height = myHeight, Fill = new SolidColorBrush(Colors.Aquamarine), RadiusY = 15, RadiusX = 15 };
         }
         public Rectangle AutoFigure()
